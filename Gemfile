@@ -30,6 +30,7 @@ group :development do
   gem 'bullet'
   gem 'capistrano', require: false
   gem 'capistrano-rails'
+  gem 'dotenv-rails'
   gem 'letter_opener'
   gem 'pry-byebug'
   gem 'pry-rails'
