@@ -9,9 +9,13 @@ Things you may want to cover:
 
 * System dependencies - MacOS
 
-* Database creation
+* Database initialization(inside psql)
+    - `create user lumon;`
+    - `ALTER USER lumon WITH SUPERUSER;`
 
-* Database initialization
+* Database creation
+    - `rake db:create`
+    - `rake db:migrate`
 
 * How to run the test suite
 
