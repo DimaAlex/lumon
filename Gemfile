@@ -28,6 +28,7 @@ gem 'puma', '~> 3.11'
 
 group :development do
   gem 'bullet'
+  gem 'capistrano', require: false
   gem 'capistrano-rails'
   gem 'letter_opener'
   gem 'pry-byebug'

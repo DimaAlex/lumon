@@ -212,6 +212,7 @@ DEPENDENCIES
   awesome_print
   bootsnap (>= 1.1.0)
   bullet
+  capistrano
   capistrano-rails
   circleci
   database_cleaner
