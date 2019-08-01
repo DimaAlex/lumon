@@ -69,6 +69,13 @@ GEM
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
+    capistrano-rvm (0.1.2)
+      capistrano (~> 3.0)
+      sshkit (~> 1.2)
+    capistrano3-puma (3.1.1)
+      capistrano (~> 3.7)
+      capistrano-bundler
+      puma (~> 3.4)
     circleci (2.0.2)
     coderay (1.1.2)
     concurrent-ruby (1.1.5)
@@ -221,7 +228,10 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bullet
   capistrano
+  capistrano-bundler
   capistrano-rails
+  capistrano-rvm
+  capistrano3-puma
   circleci
   database_cleaner
   dotenv-rails

@@ -30,7 +30,10 @@ group :development do
   gem 'annotate'
   gem 'bullet'
   gem 'capistrano', require: false
-  gem 'capistrano-rails'
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-rvm', require: false
+  gem 'capistrano3-puma', require: false
   gem 'dotenv-rails'
   gem 'letter_opener'
   gem 'pry-byebug'
