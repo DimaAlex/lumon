@@ -27,6 +27,7 @@ gem 'puma', '~> 3.11'
 # gem 'bcrypt', '~> 3.1.7'
 
 group :development do
+  gem 'annotate'
   gem 'bullet'
   gem 'capistrano', require: false
   gem 'capistrano-rails'
