@@ -18,7 +18,7 @@ gem 'puma', '~> 3.11'
 # Use CoffeeScript for .coffee assets and views
 # gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-# gem 'turbolinks', '~> 5'
+gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
@@ -31,6 +31,7 @@ group :development do
   gem 'bullet'
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
+  gem 'capistrano-linked-files'
   gem 'capistrano-rails', require: false
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-puma', require: false

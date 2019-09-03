@@ -32,3 +32,5 @@
 
 # dotenv environment variables file
 .env
+
+secrets.yml

@@ -66,6 +66,8 @@ GEM
       sshkit (>= 1.9.0)
     capistrano-bundler (1.6.0)
       capistrano (~> 3.1)
+    capistrano-linked-files (1.2.0)
+      capistrano (~> 3.1)
     capistrano-rails (1.4.0)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
@@ -211,6 +213,9 @@ GEM
       net-ssh (>= 2.8.0)
     thor (0.20.3)
     thread_safe (0.3.6)
+    turbolinks (5.2.0)
+      turbolinks-source (~> 5.2)
+    turbolinks-source (5.2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     unicode-display_width (1.6.0)
@@ -229,6 +234,7 @@ DEPENDENCIES
   bullet
   capistrano
   capistrano-bundler
+  capistrano-linked-files
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
@@ -246,6 +252,7 @@ DEPENDENCIES
   simplecov
   spring
   spring-watcher-listen (~> 2.0.0)
+  turbolinks (~> 5)
 
 RUBY VERSION
    ruby 2.6.3p62

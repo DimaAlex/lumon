@@ -14,9 +14,6 @@ lock '~> 3.11.0'
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
 
-# Default value for default_env is {}
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
-
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
@@ -28,7 +25,7 @@ lock '~> 3.11.0'
 
 
 # Change these
-server '35.193.194.222 ', port: 443, roles: [:web, :app, :db], primary: true
+server '34.67.5.108', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:DimaAlex/lumon.git'
 set :application,     'lumon'
@@ -52,15 +49,9 @@ set :puma_preload_app, true
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true  # Change to false when not using ActiveRecord
 
-## Defaults:
-# set :scm,           :git
-# set :branch,        :master
-# set :format,        :pretty
-# set :log_level,     :debug
-# set :keep_releases, 5
-
 ## Linked Files & Directories (Default None):
 # set :linked_files, %w{config/database.yml}
+set :linked_files, %w{config/secrets.yml}
 # set :linked_dirs,  %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
 
 namespace :puma do
