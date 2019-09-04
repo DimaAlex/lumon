@@ -31,7 +31,7 @@ group :development do
   gem 'bullet'
   gem 'capistrano', require: false
   gem 'capistrano-bundler', require: false
-  gem 'capistrano-linked-files'
+  gem 'capistrano-linked-files', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rvm', require: false
   gem 'capistrano3-puma', require: false
