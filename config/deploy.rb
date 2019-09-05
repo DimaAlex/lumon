@@ -8,12 +8,6 @@ lock '~> 3.11.0'
 # These are the defaults.
 # set :format_options, command_output: true, log_file: "log/capistrano.log", color: :auto, truncate: :auto
 
-# Default value for :linked_files is []
-# append :linked_files, "config/database.yml"
-
-# Default value for linked_dirs is []
-# append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
-
 # Default value for local_user is ENV['USER']
 # set :local_user, -> { `git config user.name`.chomp }
 
@@ -23,8 +17,6 @@ lock '~> 3.11.0'
 # Uncomment the following to require manually verifying the host key before first deploy.
 # set :ssh_options, verify_host_key: :secure
 
-
-# Change these
 server '34.67.5.108', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:DimaAlex/lumon.git'
